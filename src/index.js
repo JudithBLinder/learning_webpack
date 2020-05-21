@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+const React = require('React');
+const ReactDOM = require('React-dom');
 
-class App {
+class App extends React.Component{
   render() {
     return (
       <h1>
@@ -11,7 +11,7 @@ class App {
   }
 }
 
-const app = document.getElementById('#app');
+const app = document.getElementById('app');
 
 ReactDOM.render(
   <App />,
